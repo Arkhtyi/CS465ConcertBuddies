@@ -1,5 +1,6 @@
 package com.example.arkh_tyi.concertbuddies;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
@@ -12,7 +13,8 @@ public class ArtistPageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_artist_page);
-
+        Intent intent = getIntent();
+        String artist = intent.getStringExtra("artist");
         PinnedListAdapter listAdapter = new PinnedListAdapter(this, getEvents());
         ListView listView = findViewById(R.id.event_list);
         listView.setAdapter(listAdapter);

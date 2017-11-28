@@ -54,6 +54,7 @@ public class ContentFragment extends Fragment {
 
                     Intent intent = new Intent(getContext(), ArtistPageActivity.class);
                     //based on item add info to intent
+                    intent.putExtra("artist", item.getTitle());
                     startActivity(intent);
                 }
             });
