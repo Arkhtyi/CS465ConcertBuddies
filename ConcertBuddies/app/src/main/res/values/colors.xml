@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="teal">#68EFAD</color>
+    <color name="violet">#9B26AF</color>
+    <color name="violetAccent1">#7A1EA1</color>
+    <color name="violetAccent2">#691A99</color>
+    <color name="white">#f1f1f1</color>
+    <color name="black">#202020</color>
 </resources>
