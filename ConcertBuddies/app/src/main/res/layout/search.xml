@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/search1"
+                    android:layout_marginTop="8dp"
+                    />
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/search"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/violetAccent2"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"/>-->
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/violetAccent2"
+                    android:textSize="17dp"
+                    android:id="@+id/password"
+                    android:hint="@string/search"
+                    android:inputType="textCapSentences"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:gravity="center_horizontal">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buddies"
+                    android:background="@drawable/clicked_tab"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+
+                    />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artists"
+                    android:background="@drawable/tabs_styles"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="5"
+            android:gravity="center_horizontal">
+            <ScrollView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop= "5dp"
+                        android:paddingBottom= "5dp"
+                        android:background="@drawable/borders"
+                        android:layout_marginBottom="2dp">
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/hipster3"
+                            android:layout_marginTop="3dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Amy Anderson"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Chicago, IL"
+                            android:textStyle="italic"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="90dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop= "5dp"
+                        android:paddingBottom= "5dp"
+                        android:background="@drawable/borders"
+                        android:layout_marginBottom="2dp">
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/hipster1"
+                            android:layout_marginTop="3dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Arthur Clark"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Chicago, IL"
+                            android:textStyle="italic"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="114dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop= "5dp"
+                        android:paddingBottom= "5dp"
+                        android:background="@drawable/borders"
+                        android:layout_marginBottom="2dp">
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/hipster4"
+                            android:layout_marginTop="3dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Audrey White"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Chicago, IL"
+                            android:textStyle="italic"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="103dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop= "5dp"
+                        android:paddingBottom= "5dp"
+                        android:background="@drawable/borders"
+                        android:layout_marginBottom="2dp">
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/hipster2"
+                            android:layout_marginTop="3dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Dennis Rosen"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Chicago, IL"
+                            android:textStyle="italic"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="99dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop= "5dp"
+                        android:paddingBottom= "5dp"
+                        android:background="@drawable/borders"
+                        android:layout_marginBottom="2dp">
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/hipster9"
+                            android:layout_marginTop="3dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Liz Birch"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Chicago, IL"
+                            android:textStyle="italic"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="144dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop= "5dp"
+                        android:paddingBottom= "5dp"
+                        android:background="@drawable/borders"
+                        android:layout_marginBottom="2dp">
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/hipster7"
+                            android:layout_marginTop="3dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Matt Hemming"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Chicago, IL"
+                            android:textStyle="italic"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="87dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop= "5dp"
+                        android:paddingBottom= "5dp"
+                        android:background="@drawable/borders"
+                        android:layout_marginBottom="2dp">
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/hipster10"
+                            android:layout_marginTop="3dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Parker Miranda"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Chicago, IL"
+                            android:textStyle="italic"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="83dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop= "5dp"
+                        android:paddingBottom= "5dp"
+                        android:background="@drawable/borders"
+                        android:layout_marginBottom="2dp">
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/hipster11"
+                            android:layout_marginTop="3dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Quinn Bezel"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Chicago, IL"
+                            android:textStyle="italic"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="116dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop= "5dp"
+                        android:paddingBottom= "5dp"
+                        android:background="@drawable/borders"
+                        android:layout_marginBottom="2dp">
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/hipster12"
+                            android:layout_marginTop="3dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Roger Mancina"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Chicago, IL"
+                            android:textStyle="italic"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="86dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop= "5dp"
+                        android:paddingBottom= "5dp"
+                        android:background="@drawable/borders"
+                        android:layout_marginBottom="2dp">
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/hipster15"
+                            android:layout_marginTop="3dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Sarah Maas"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Chicago, IL"
+                            android:textStyle="italic"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="114dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop= "5dp"
+                        android:paddingBottom= "5dp"
+                        android:background="@drawable/borders"
+                        android:layout_marginBottom="2dp">
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/hipster14"
+                            android:layout_marginTop="3dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Saul Sanchez"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:paddingTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Chicago, IL"
+                            android:textStyle="italic"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/violetAccent2"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="101dp"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
