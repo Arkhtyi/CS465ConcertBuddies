@@ -1,5 +1,20 @@
 <resources>
     <string name="app_name">ConcertBuddies</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="locations">Add Locations</string>
+    <string name="entries">Chicago\nBoston</string>
+
+    <string-array name="cities_list">
+        <item>Chicago</item>
+        <item>Boston</item>
+        <item>Atlanta</item>
+        <item>Los Angeles</item>
+        <item>New York City</item>
+        <item>Seattle</item>
+        <item>Detroit</item>
+        <item>Indianapolis</item>
+    </string-array>
     <string name="buddiesu"><u>BUDDIES</u></string>
     <string name="buddies">BUDDIES</string>
     <string name="myBuddies">My Buddies</string>

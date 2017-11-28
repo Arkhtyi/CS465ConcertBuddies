@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.arkh_tyi.concertbuddies.Settings"
+    tools:showIn="@layout/activity_settings">
+
+
+    <!-- Back Arrow Button -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backArrow"
+        android:src="@drawable/back_arrow"
+        android:maxHeight="30dp"
+        android:maxWidth="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="10dp"
+
+        />
+    <!-- Edit Bio Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:id="@+id/settingsText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    <!-- line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/settingsText"
+        android:layout_marginTop="10dp"
+        android:id="@+id/line"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameLocationAge"
+        android:orientation="vertical"
+        android:layout_below="@+id/line"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Name:"
+            android:id="@+id/nameText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:padding="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Location:"
+            android:id="@+id/locationText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:padding="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Age:"
+            android:id="@+id/ageText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:padding="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Edit Bio:"
+            android:id="@+id/editBioText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:padding="2dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/editTexts"
+        android:layout_toEndOf="@+id/nameLocationAge"
+        android:layout_toRightOf="@+id/nameLocationAge"
+        android:layout_below="@+id/line"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameEdit"
+            android:hint="Enter Name"
+            android:textSize="20dp"
+            android:padding="2dp"
+            android:maxLength="20"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationEdit"
+            android:hint="Enter Location"
+            android:textSize="20dp"
+            android:padding="2dp"
+            android:maxLength="20"
+
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ageEdit"
+            android:hint="Enter Age"
+            android:textSize="20dp"
+            android:padding="2dp"
+            android:maxLength="20"
+
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:id="@+id/editBioButton"
+            android:padding="2dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearAvi"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/editTexts"
+        android:layout_toRightOf="@+id/editTexts"
+        android:layout_below="@+id/line"
+        >
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="80dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="80dp"
+            android:elevation="12dp"
+            android:id="@+id/view2"
+            app:cardCornerRadius="40dp"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.9"
+
+            >
+            <ImageView
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:id="@+id/profilePic"
+                android:src="@drawable/img"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                >
+            </ImageView>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change\nPhoto"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/changePhotoText"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTexts"
+        android:src="@drawable/spotify"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/spotifyButton"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buddy Matching"
+        android:layout_below="@+id/spotifyButton"
+        android:textSize="30sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/buddyMatchingText"
+        />
+
+    <View
+        android:layout_width="220dp"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/buddyMatchingText"
+        android:layout_marginLeft="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/budgetAgeRangeLocations"
+        android:orientation="vertical"
+        android:layout_below="@+id/buddyMatchingText"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/budgetText"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age Range"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ageRangeText"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Locations"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/locationsText"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/minEditTexts"
+        android:layout_toEndOf="@+id/budgetAgeRangeLocations"
+        android:layout_below="@+id/buddyMatchingText"
+        android:layout_toRightOf="@+id/budgetAgeRangeLocations"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:maxLength="3"
+            android:hint="Min"
+            android:padding="2dp"
+            />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:maxLength="3"
+            android:hint="Min"
+            android:padding="2dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/maxEditTexts"
+        android:layout_toEndOf="@+id/minEditTexts"
+        android:layout_below="@+id/buddyMatchingText"
+        android:layout_toRightOf="@+id/minEditTexts"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        >
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:maxLength="3"
+            android:hint="Max"
+            android:padding="2dp"
+            />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:maxLength="3"
+            android:hint="Max"
+            android:padding="2dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/dropDown"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:prompt="@string/locations"
+        android:layout_below="@+id/minEditTexts"
+        android:layout_toEndOf="@+id/budgetAgeRangeLocations"
+        android:layout_toRightOf="@+id/budgetAgeRangeLocations"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:entries="@array/cities_list"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chicago"
+        android:text="Chicago"
+        android:textSize="20sp"
+        android:layout_below="@+id/budgetAgeRangeLocations"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/boston"
+        android:text="Boston"
+        android:textSize="16sp"
+        android:layout_below="@+id/chicago"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+</RelativeLayout>
