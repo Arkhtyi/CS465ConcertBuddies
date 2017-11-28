@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MakePlan"></activity>
+        <activity android:name=".UserProfileActivity" />
+        <activity android:name=".ArtistPageActivity"></activity>
     </application>
 
 </manifest>

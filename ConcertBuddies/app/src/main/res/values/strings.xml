@@ -10,4 +10,7 @@
     <string name="recEvents">Recommend Events</string>
     <string name="artists">Artists</string>
     <string name="your_string_here">This is an <u>underline</u>.</string>
+    <string name="kelly_description">I\'m Kelly and I love spending time going to concerts and playing guitar. I have a 3 legged cat and I\'m super into extreme sports.</string>
+    <string name="artists_tab">Artists</string>
+    <string name="description_tab">Description</string>
 </resources>
