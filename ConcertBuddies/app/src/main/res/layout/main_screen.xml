@@ -37,6 +37,7 @@
             >
         </TextView>
         <Button
+            android:id="@+id/my_buddies_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/myBuddies"
@@ -46,6 +47,7 @@
             android:textSize="16dp"
             />
         <Button
+            android:id="@+id/recommend_buddies_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/recBuddies"
@@ -64,6 +66,7 @@
 
         </TextView>
         <Button
+            android:id="@+id/my_events_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/myEvents"
@@ -72,6 +75,7 @@
             android:textColor="@color/white"
             android:textSize="16dp"/>
         <Button
+            android:id="@+id/recommend_events_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/recEvents"
