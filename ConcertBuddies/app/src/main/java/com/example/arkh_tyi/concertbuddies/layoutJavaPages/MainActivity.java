@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
     private Button MyEvents;
     private Button RecommendEvents;
 
+    private Button search;
+    private Button settings;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         MyEvents = (Button) findViewById(R.id.MyEventsButton);
         RecommendEvents = (Button) findViewById(R.id.RecommendedEventsButton);
 
-
+        search = (Button) findViewById(R.id.searchButton);
+        settings = (Button) findViewById(R.id.settingsButton);
 
         MyBuddies.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +56,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, RecEventsPage.class));
+            }
+        });
+
+
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Settings.class));
+            }
+        });
+
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, SearchPage.class));
             }
         });
 
