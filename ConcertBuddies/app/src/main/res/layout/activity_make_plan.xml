@@ -12,9 +12,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         >
-        <Button
-            android:layout_width="50dp"
+        <ImageButton
+            android:id="@+id/backarrow1"
+            android:src="@drawable/arro"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
+            android:background="#00ffffff"
 
             />
 
@@ -50,17 +54,19 @@
             android:layout_height="wrap_content"
             android:text="Adele in Chicago
 Nov 5, 2017"
-            android:textSize="30dp"
+            android:textSize="25dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="30dp"
             />
 
-        <Button
+        <ImageButton
+            android:src="@drawable/favstar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="100dp"
             android:layout_gravity="center"
+            android:background="#00ffffff"
             />
 
     </LinearLayout>
@@ -92,10 +98,14 @@ Nov 5, 2017"
                 android:text="Buddies"
                 android:textSize="25dp" />
 
-            <Button
+            <ImageButton
+                android:src="@drawable/plusicon"
+                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="150dp" />
+                android:layout_marginLeft="200dp"
+                android:background="#00ffffff"
+                />
 
 
         </LinearLayout>
