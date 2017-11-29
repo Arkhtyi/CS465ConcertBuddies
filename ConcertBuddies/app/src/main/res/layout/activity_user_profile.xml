@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.arkh_tyi.concertbuddies.UserProfileActivity">
+    tools:context="com.example.arkh_tyi.concertbuddies.layoutJavaPages.UserProfileActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

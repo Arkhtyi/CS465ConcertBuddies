@@ -9,6 +9,33 @@
         android:orientation="vertical"
         android:layout_weight="2"
         android:gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/settingsButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/settings"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="290dp"
+                android:textColor="@color/white"
+                android:textSize="16dp">
+
+            </Button>
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/search1"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/white"
+                android:textSize="16dp">
+
+            </Button>
+        </LinearLayout>
+
         <ImageView
             android:layout_width="200dp"
             android:layout_height="match_parent"
@@ -37,7 +64,7 @@
             >
         </TextView>
         <Button
-            android:id="@+id/my_buddies_button"
+            android:id="@+id/MyBuddiesButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/myBuddies"
@@ -47,7 +74,7 @@
             android:textSize="16dp"
             />
         <Button
-            android:id="@+id/recommend_buddies_button"
+            android:id="@+id/RecommendedBuddiesButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/recBuddies"
@@ -66,7 +93,7 @@
 
         </TextView>
         <Button
-            android:id="@+id/my_events_button"
+            android:id="@+id/MyEventsButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/myEvents"
@@ -75,7 +102,7 @@
             android:textColor="@color/white"
             android:textSize="16dp"/>
         <Button
-            android:id="@+id/recommend_events_button"
+            android:id="@+id/RecommendedEventsButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/recEvents"

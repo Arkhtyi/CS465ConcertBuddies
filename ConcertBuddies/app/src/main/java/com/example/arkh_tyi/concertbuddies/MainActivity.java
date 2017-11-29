@@ -7,10 +7,6 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button myBuddies;
-    private Button myBuddies;
-    private Button myBuddies;
-    private Button myBuddies;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
