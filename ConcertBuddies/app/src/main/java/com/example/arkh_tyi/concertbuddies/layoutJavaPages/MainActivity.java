@@ -1,10 +1,12 @@
-package com.example.arkh_tyi.concertbuddies;
+package com.example.arkh_tyi.concertbuddies.layoutJavaPages;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.arkh_tyi.concertbuddies.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,28 +30,28 @@ public class MainActivity extends AppCompatActivity {
         MyBuddies.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, ));
+                startActivity(new Intent(MainActivity.this, MyBuddiesPage.class));
             }
         });
 
         RecommendBuddies.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, ));
+                startActivity(new Intent(MainActivity.this, RecBuddiesPage.class));
             }
         });
 
         MyEvents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, ));
+                startActivity(new Intent(MainActivity.this, MyEventsPage.class));
             }
         });
 
         RecommendEvents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, ));
+                startActivity(new Intent(MainActivity.this, RecEventsPage.class));
             }
         });
 
