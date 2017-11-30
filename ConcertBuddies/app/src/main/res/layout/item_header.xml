@@ -6,7 +6,7 @@
 
     <TextView
         android:id="@+id/section_header"
-        android:background="#e5e5e5"
+        android:background="@color/violetAccent2"
         android:paddingTop="3dp"
         android:paddingBottom="3dp"
         android:paddingLeft="5dp"
@@ -15,7 +15,7 @@
         android:gravity="left|center"
         android:textAllCaps="true"
         android:textStyle="bold"
-        android:textColor="#6f6969"
+        android:textColor="@color/white"
         android:text="UPCOMING EVENTS" />
 
 </LinearLayout>
