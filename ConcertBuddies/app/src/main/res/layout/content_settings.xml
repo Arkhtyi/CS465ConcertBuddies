@@ -213,14 +213,14 @@
     </LinearLayout>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editTexts"
-        android:src="@drawable/spotify"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
         android:id="@+id/spotifyButton"
-        />
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearAvi"
+        android:layout_toEndOf="@+id/nameLocationAge"
+        android:layout_toRightOf="@+id/nameLocationAge"
+        android:scaleType="fitCenter"
+        android:src="@drawable/spotify" />
 
     <TextView
         android:layout_width="wrap_content"
