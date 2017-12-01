@@ -5,14 +5,6 @@
     android:orientation="vertical">
 
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="10dp"
-        android:src="@drawable/arro"
-        android:background="#00ffffff" />
-
     <!--Separator line-->
     <View
         android:layout_width="match_parent"
@@ -37,23 +29,33 @@
 
 
     <!--Buddies-->
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/image1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/profile"
+        android:background="#00ffffff" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/plus"
+
+        android:layout_alignBottom="@+id/image1"
+        />
+</RelativeLayout>
 
     <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_marginTop="152dp"
         android:layout_marginLeft="1dp"
         android:src="@drawable/plus"
-        android:background="#00ffffff" />
+        />
 
-    <ImageButton
-        android:id="@+id/image1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginLeft="40dp"
-        android:src="@drawable/profile"
-        android:background="#00ffffff" />
+
 
 
     <LinearLayout
