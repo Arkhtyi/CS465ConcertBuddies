@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -6,8 +10,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.arkh_tyi.concertbuddies.Settings"
-    tools:showIn="@layout/activity_settings">
+    tools:context="com.example.arkh_tyi.concertbuddies.layoutJavaPages.Settings"
+    tools:showIn="@layout/activity_settings"
+    >
 
 
     <!-- Back Arrow Button -->
@@ -20,7 +25,7 @@
         android:maxWidth="30dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
 
         />
     <!-- Edit Bio Text -->
@@ -32,7 +37,9 @@
         android:gravity="center"
         android:id="@+id/settingsText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/violetAccent2"
+
         />
     <!-- line -->
     <View
@@ -42,6 +49,7 @@
         android:layout_below="@+id/settingsText"
         android:layout_marginTop="10dp"
         android:id="@+id/line"
+        android:backgroundTint="@color/violetAccent2"
         />
 
     <LinearLayout
@@ -61,6 +69,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:padding="2dp"
+            android:textColor="@color/violetAccent2"
+
             />
 
         <TextView
@@ -72,6 +82,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:padding="2dp"
+            android:textColor="@color/violetAccent2"
+
             />
 
         <TextView
@@ -83,6 +95,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:padding="2dp"
+            android:textColor="@color/violetAccent2"
+
             />
 
         <TextView
@@ -94,6 +108,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:padding="2dp"
+            android:textColor="@color/violetAccent2"
+
             />
     </LinearLayout>
 
@@ -107,34 +123,35 @@
         android:layout_below="@+id/line"
         >
 
+
+
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:id="@+id/nameEdit"
-            android:hint="Enter Name"
             android:textSize="20dp"
             android:padding="2dp"
             android:maxLength="20"
+
             />
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:id="@+id/locationEdit"
-            android:hint="Enter Location"
             android:textSize="20dp"
             android:padding="2dp"
             android:maxLength="20"
 
             />
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:id="@+id/ageEdit"
-            android:hint="Enter Age"
             android:textSize="20dp"
             android:padding="2dp"
             android:maxLength="20"
+            android:numeric="integer"
 
             />
         <Button
@@ -142,6 +159,7 @@
             android:layout_height="30dp"
             android:id="@+id/editBioButton"
             android:padding="2dp"
+            android:text="Edit Bio ->"
             />
 
     </LinearLayout>
@@ -159,7 +177,7 @@
 
         <android.support.v7.widget.CardView
             android:layout_width="80dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="50dp"
             android:layout_marginTop="10dp"
             android:layout_height="80dp"
             android:elevation="12dp"
@@ -174,9 +192,10 @@
                 android:layout_height="80dp"
                 android:layout_width="match_parent"
                 android:id="@+id/profilePic"
-                android:src="@drawable/img"
+                android:src="@drawable/hipster3"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
+
                 >
             </ImageView>
         </android.support.v7.widget.CardView>
@@ -185,8 +204,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Change\nPhoto"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="60dp"
             android:id="@+id/changePhotoText"
+            android:textColor="@color/violetAccent2"
+            android:textSize="20sp"
             />
 
     </LinearLayout>
@@ -209,8 +230,9 @@
         android:textSize="30sp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:textColor="@color/colorPrimary"
         android:id="@+id/buddyMatchingText"
+        android:textColor="@color/violetAccent2"
+
         />
 
     <View
@@ -219,6 +241,7 @@
         android:background="@color/colorPrimary"
         android:layout_below="@+id/buddyMatchingText"
         android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/violetAccent2"
         />
 
     <LinearLayout
@@ -236,7 +259,9 @@
             android:textSize="25sp"
             android:layout_marginLeft="10dp"
             android:id="@+id/budgetText"
-            android:layout_marginStart="10dp" />
+            android:layout_marginStart="10dp"
+            android:textColor="@color/violetAccent2"
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -245,7 +270,9 @@
             android:textSize="25sp"
             android:layout_marginLeft="10dp"
             android:id="@+id/ageRangeText"
-            android:layout_marginStart="10dp" />
+            android:layout_marginStart="10dp"
+            android:textColor="@color/violetAccent2"
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -254,7 +281,9 @@
             android:textSize="25sp"
             android:layout_marginLeft="10dp"
             android:id="@+id/locationsText"
-            android:layout_marginStart="10dp" />
+            android:layout_marginStart="10dp"
+            android:textColor="@color/violetAccent2"
+            />
 
     </LinearLayout>
 
@@ -271,7 +300,7 @@
         >
 
         <EditText
-            android:layout_width="50dp"
+            android:layout_width="35dp"
             android:layout_height="wrap_content"
             android:maxLength="3"
             android:hint="Min"
@@ -279,7 +308,7 @@
             />
 
         <EditText
-            android:layout_width="50dp"
+            android:layout_width="35dp"
             android:layout_height="wrap_content"
             android:maxLength="3"
             android:hint="Min"
@@ -303,7 +332,7 @@
         >
 
         <EditText
-            android:layout_width="50dp"
+            android:layout_width="35dp"
             android:layout_height="wrap_content"
             android:maxLength="3"
             android:hint="Max"
@@ -311,7 +340,7 @@
             />
 
         <EditText
-            android:layout_width="50dp"
+            android:layout_width="35dp"
             android:layout_height="wrap_content"
             android:maxLength="3"
             android:hint="Max"
@@ -334,28 +363,135 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
         android:entries="@array/cities_list"
-        />
 
-    <Button
+        />
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/chicago"
-        android:text="Chicago"
-        android:textSize="20sp"
-        android:layout_below="@+id/budgetAgeRangeLocations"
-        android:layout_marginLeft="20dp"
-        android:layout_marginStart="20dp" />
+        android:id="@+id/firstColLocations"
+        android:orientation="vertical"
+        android:layout_below="@id/budgetAgeRangeLocations"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        >
 
-    <Button
-        android:layout_width="100dp"
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/chicago"
+            android:text="Chicago"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:background="@color/violet"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/boston"
+            android:text="Boston"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@color/violet"
+            android:textColor="@color/white"
+
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/atlanta"
+            android:text="Atlanta"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@color/violet"
+            android:textColor="@color/white"
+
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/detroit"
+            android:text="Detroit"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@color/violet"
+            android:textColor="@color/white"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/boston"
-        android:text="Boston"
-        android:textSize="16sp"
-        android:layout_below="@+id/chicago"
-        android:layout_marginLeft="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:gravity="center"/>
+        android:id="@+id/secondColLocations"
+        android:orientation="vertical"
+        android:layout_below="@id/budgetAgeRangeLocations"
+        android:layout_toEndOf="@+id/firstColLocations"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/firstColLocations">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/losAngeles"
+            android:text="Los Angeles"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:background="@color/violet"
+            android:textColor="@color/white"
+
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/newYorkCity"
+            android:text="New York City"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@color/violet"
+            android:textColor="@color/white"
+
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seattle"
+            android:text="Seattle"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@color/violet"
+            android:textColor="@color/white"
+
+            />
+
+    </LinearLayout>
+
 
 </RelativeLayout>
+</ScrollView>

@@ -3,7 +3,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.arkh_tyi.concertbuddies.Bio"
+        tools:context="com.example.arkh_tyi.concertbuddies.layoutJavaPages.Bio"
         android:id="@+id/firstPost"
         android:paddingTop="10dp"
         >
@@ -29,6 +29,7 @@
         android:gravity="center"
         android:id="@+id/editBioText"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/violetAccent2"
         />
 <!-- line -->
     <View
@@ -46,6 +47,7 @@
         android:hint="Tell us about yourself!"
         android:id="@+id/bioEditor"
         android:layout_below="@+id/line"
+        android:textColor="@color/violetAccent2"
 
 
         />

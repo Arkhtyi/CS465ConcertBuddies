@@ -1,4 +1,4 @@
-package com.example.arkh_tyi.concertbuddies;
+package com.example.arkh_tyi.concertbuddies.layoutJavaPages;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -9,6 +9,9 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+
+import com.example.arkh_tyi.concertbuddies.ContentFragment;
+import com.example.arkh_tyi.concertbuddies.R;
 
 public class UserProfileActivity extends AppCompatActivity {
 
