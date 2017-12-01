@@ -76,7 +76,7 @@ public class PinnedListAdapter extends ArrayAdapter<Item> implements PinnedSecti
             CircleImageView img = (CircleImageView) view.findViewById(R.id.artist_img);
             TextView textView = (TextView) view.findViewById(R.id.artist_name);
             textView.setText(item.getTitle());
-            img.setImageResource(R.drawable.adele1);
+            img.setImageResource(((Artist) item).getImgSrc());
 
         } else if (item instanceof Event) {
            view = LayoutInflater.from(getContext()).inflate(R.layout.item_event, viewGroup, false);

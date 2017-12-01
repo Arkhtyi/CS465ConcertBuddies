@@ -103,14 +103,14 @@ public class SearchPageContentFragment extends Fragment {
     private ArrayList<Item> getArtists(){
         ArrayList<Item> list = new ArrayList<>();
 
-        list.add(new Artist("Adele"));
-        list.add(new Artist("Beach House"));
-        list.add(new Artist("Chance The Rapper"));
-        list.add(new Artist("Amy Winehouse"));
-        list.add(new Artist("Arcade Fire"));
-        list.add(new Artist("Bad Suns"));
-        list.add(new Artist("Beirut"));
-        list.add(new Artist("Circa Waves"));
+        list.add(new Artist("Adele", R.drawable.adele1));
+        list.add(new Artist("Beach House", R.drawable.beachhouse));
+        list.add(new Artist("Chance The Rapper", R.drawable.chancetherapper));
+        list.add(new Artist("Amy Winehouse", R.drawable.amywinehouse));
+        list.add(new Artist("Arcade Fire", R.drawable.arcadefire));
+        list.add(new Artist("Bad Suns", R.drawable.badsuns));
+        list.add(new Artist("Beirut", R.drawable.beirut));
+        list.add(new Artist("Circa Waves", R.drawable.circawaves));
 
         return list;
     }

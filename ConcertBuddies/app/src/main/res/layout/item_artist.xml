@@ -6,11 +6,12 @@
     android:orientation="horizontal"
     >
     <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/artist_img"
         android:layout_margin="10dp"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/adele1"/>
+        android:src="@drawable/circawaves"/>
     <TextView
         android:id="@+id/artist_name"
         android:layout_width="match_parent"
