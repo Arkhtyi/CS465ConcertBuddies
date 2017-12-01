@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -47,7 +48,7 @@ public class PinnedListAdapter extends ArrayAdapter<Item> implements PinnedSecti
 
     @Override
     public int getViewTypeCount() {
-        return 3;
+        return 4;
     }
 
     @Override
@@ -55,8 +56,11 @@ public class PinnedListAdapter extends ArrayAdapter<Item> implements PinnedSecti
         Item item = getItem(position);
         if(item instanceof Artist) {
             return 1;
-        } else if (item instanceof Event)
+        } else if (item instanceof Event) {
             return 2;
+        } else if (item instanceof Buddy) {
+            return 3;
+        }
         return 0;
     }
 
@@ -78,6 +82,14 @@ public class PinnedListAdapter extends ArrayAdapter<Item> implements PinnedSecti
            TextView date = (TextView) view.findViewById(R.id.date);
            location.setText(((Event) item).getLocation());
            date.setText(((Event) item).getDate());
+        } else if (item instanceof Buddy) {
+            view = LayoutInflater.from(getContext()).inflate(R.layout.item_user, viewGroup, false);
+            TextView location  = (TextView) view.findViewById(R.id.item_user_location);
+            TextView name = (TextView) view.findViewById(R.id.item_user_name);
+            ImageView image = (ImageView) view.findViewById(R.id.item_user_img);
+            location.setText(((Buddy) item).getLocation());
+            name.setText(item.getTitle());
+            image.setImageResource(R.drawable.hipster2);
         } else {
             view = LayoutInflater.from(getContext()).inflate(R.layout.item_header, viewGroup, false);
             TextView textView = (TextView) view.findViewById(R.id.section_header);

@@ -46,32 +46,32 @@
                     android:inputType="textCapSentences"
                     />
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_weight="2"
-                android:gravity="center_horizontal">
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/buddies"
-                    android:background="@drawable/clicked_tab"
-                    android:layout_marginBottom="5dp"
-                    android:textColor="@color/white"
-                    android:layout_weight="1"
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_weight="2"-->
+                <!--android:gravity="center_horizontal">-->
+                <!--<Button-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/buddies"-->
+                    <!--android:background="@drawable/clicked_tab"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:layout_weight="1"-->
 
-                    />
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/artists"
-                    android:background="@drawable/tabs_styles"
-                    android:layout_marginBottom="5dp"
-                    android:textColor="@color/white"
-                    android:layout_weight="1"
-                    />
-            </LinearLayout>
+                    <!--/>-->
+                <!--<Button-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/artists"-->
+                    <!--android:background="@drawable/tabs_styles"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
         </LinearLayout>
 
         <LinearLayout

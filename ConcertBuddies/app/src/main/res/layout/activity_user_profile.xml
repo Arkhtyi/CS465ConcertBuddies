@@ -96,7 +96,9 @@
             app:tabGravity="fill"
             app:tabMode="fixed"
             app:tabTextColor="@android:color/black"
-            app:tabIndicatorColor="#008080">
+            app:tabBackground="@drawable/tab_color_selector"
+            app:tabIndicatorColor="@color/violetAccent1"
+            android:layout_marginBottom="1dp">
 
             <android.support.design.widget.TabItem
                 android:layout_height="wrap_content"
