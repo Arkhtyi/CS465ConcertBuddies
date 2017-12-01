@@ -207,7 +207,7 @@
             android:layout_marginLeft="60dp"
             android:id="@+id/changePhotoText"
             android:textColor="@color/violetAccent2"
-            android:textSize="20sp"
+            android:textSize="15sp"
             />
 
     </LinearLayout>
@@ -215,7 +215,7 @@
     <ImageView
         android:id="@+id/spotifyButton"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_below="@+id/linearAvi"
         android:layout_toEndOf="@+id/nameLocationAge"
         android:layout_toRightOf="@+id/nameLocationAge"
@@ -229,7 +229,7 @@
         android:layout_below="@+id/spotifyButton"
         android:textSize="30sp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/buddyMatchingText"
         android:textColor="@color/violetAccent2"
 
@@ -384,7 +384,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginStart="20dp"
             android:gravity="center"
-            android:background="@color/violet"
+            android:background="@drawable/button_states"
             android:textColor="@color/white"
             />
 
@@ -398,7 +398,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:background="@color/violet"
+            android:background="@drawable/button_states"
             android:textColor="@color/white"
 
             />
@@ -413,7 +413,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:background="@color/violet"
+            android:background="@drawable/button_states"
             android:textColor="@color/white"
 
             />
@@ -428,7 +428,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:background="@color/violet"
+            android:background="@drawable/button_states"
             android:textColor="@color/white"
 
             />
@@ -455,7 +455,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginStart="20dp"
             android:gravity="center"
-            android:background="@color/violet"
+            android:background="@drawable/button_states"
             android:textColor="@color/white"
 
             />
@@ -470,7 +470,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:background="@color/violet"
+            android:background="@drawable/button_states"
             android:textColor="@color/white"
 
             />
@@ -485,7 +485,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:background="@color/violet"
+            android:background="@drawable/button_states"
             android:textColor="@color/white"
 
             />
