@@ -23,7 +23,7 @@
             android:name=".layoutJavaPages.Bio"
             android:label="@string/title_activity_login"
             android:theme="@style/AppTheme.NoActionBar"
-            tools:ignore="DuplicateActivity"></activity>
+            tools:ignore="DuplicateActivity" />
         <activity android:name=".layoutJavaPages.Settings" />
         <activity android:name=".MakePlan" />
         <activity android:name=".layoutJavaPages.MyEventsPage" />
@@ -34,10 +34,12 @@
         <activity android:name=".layoutJavaPages.UserProfileActivity" />
         <activity android:name=".ArtistPageActivity" />
         <activity android:name=".layoutJavaPages.SearchPage"/>
-        <activity android:name=".layoutJavaPages.MyBuddiesPage"
+        <activity android:name=".layoutJavaPages.MyBuddiesPage"/>
 
 
-            ></activity>
+
+
     </application>
+
 
 </manifest>

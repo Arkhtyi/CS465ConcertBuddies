@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 <RelativeLayout
@@ -11,23 +12,18 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.arkh_tyi.concertbuddies.layoutJavaPages.Settings"
-    tools:showIn="@layout/activity_settings"
-    >
+    tools:showIn="@layout/activity_settings">
 
 
-    <!-- Back Arrow Button -->
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/backArrow"
-        android:src="@drawable/back_arrow"
-        android:maxHeight="30dp"
-        android:maxWidth="30dp"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        android:layout_marginTop="15dp"
 
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/violet"
+        android:id="@+id/topBorder"
         />
+
     <!-- Edit Bio Text -->
     <TextView
         android:layout_width="wrap_content"
@@ -38,18 +34,8 @@
         android:id="@+id/settingsText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:textColor="@color/violetAccent2"
+        android:textColor="@color/white"
 
-        />
-    <!-- line -->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray"
-        android:layout_below="@+id/settingsText"
-        android:layout_marginTop="10dp"
-        android:id="@+id/line"
-        android:backgroundTint="@color/violetAccent2"
         />
 
     <LinearLayout
@@ -57,7 +43,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/nameLocationAge"
         android:orientation="vertical"
-        android:layout_below="@+id/line"
+        android:layout_below="@+id/topBorder"
         >
 
         <TextView
@@ -120,10 +106,16 @@
         android:id="@+id/editTexts"
         android:layout_toEndOf="@+id/nameLocationAge"
         android:layout_toRightOf="@+id/nameLocationAge"
-        android:layout_below="@+id/line"
+        android:layout_below="@+id/topBorder"
         >
 
-
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+        </LinearLayout>
 
         <EditText
             android:layout_width="120dp"
@@ -171,7 +163,7 @@
         android:orientation="vertical"
         android:layout_toEndOf="@+id/editTexts"
         android:layout_toRightOf="@+id/editTexts"
-        android:layout_below="@+id/line"
+        android:layout_below="@+id/topBorder"
         >
 
 
@@ -203,11 +195,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Change\nPhoto"
-            android:layout_marginLeft="60dp"
+            android:text="Change Photo"
+            android:layout_marginLeft="40dp"
             android:id="@+id/changePhotoText"
             android:textColor="@color/violetAccent2"
-            android:textSize="20sp"
+            android:textSize="15sp"
+
             />
 
     </LinearLayout>
@@ -215,10 +208,11 @@
     <ImageView
         android:id="@+id/spotifyButton"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_below="@+id/linearAvi"
         android:layout_toEndOf="@+id/nameLocationAge"
         android:layout_toRightOf="@+id/nameLocationAge"
+        android:layout_marginTop="25dp"
         android:scaleType="fitCenter"
         android:src="@drawable/spotify" />
 
@@ -229,9 +223,10 @@
         android:layout_below="@+id/spotifyButton"
         android:textSize="30sp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:id="@+id/buddyMatchingText"
         android:textColor="@color/violetAccent2"
+        android:layout_centerHorizontal="true"
 
         />
 
@@ -242,6 +237,7 @@
         android:layout_below="@+id/buddyMatchingText"
         android:layout_marginLeft="10dp"
         android:backgroundTint="@color/violetAccent2"
+        android:layout_centerHorizontal="true"
         />
 
     <LinearLayout
@@ -250,6 +246,7 @@
         android:id="@+id/budgetAgeRangeLocations"
         android:orientation="vertical"
         android:layout_below="@+id/buddyMatchingText"
+        android:layout_marginLeft="60dp"
         >
 
         <TextView
@@ -305,6 +302,9 @@
             android:maxLength="3"
             android:hint="Min"
             android:padding="2dp"
+            android:inputType="number"
+            android:gravity="center"
+
             />
 
         <EditText
@@ -313,6 +313,9 @@
             android:maxLength="3"
             android:hint="Min"
             android:padding="2dp"
+            android:inputType="number"
+            android:gravity="center"
+
             />
 
 
@@ -332,19 +335,24 @@
         >
 
         <EditText
-            android:layout_width="35dp"
+            android:layout_width="38dp"
             android:layout_height="wrap_content"
             android:maxLength="3"
             android:hint="Max"
             android:padding="2dp"
+            android:inputType="number"
+            android:gravity="center"
             />
 
         <EditText
-            android:layout_width="35dp"
+            android:layout_width="38dp"
             android:layout_height="wrap_content"
             android:maxLength="3"
             android:hint="Max"
             android:padding="2dp"
+            android:inputType="number"
+            android:gravity="center"
+
             />
 
 
@@ -365,6 +373,10 @@
         android:entries="@array/cities_list"
 
         />
+
+
+
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -384,7 +396,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginStart="20dp"
             android:gravity="center"
-            android:background="@color/violet"
+            android:background="@drawable/button_states"
             android:textColor="@color/white"
             />
 
@@ -398,7 +410,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:background="@color/violet"
+            android:background="@drawable/button_states"
             android:textColor="@color/white"
 
             />
@@ -413,7 +425,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:background="@color/violet"
+            android:background="@drawable/button_states"
             android:textColor="@color/white"
 
             />
@@ -428,7 +440,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:background="@color/violet"
+            android:background="@drawable/button_states"
             android:textColor="@color/white"
 
             />
@@ -455,7 +467,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginStart="20dp"
             android:gravity="center"
-            android:background="@color/violet"
+            android:background="@drawable/button_states"
             android:textColor="@color/white"
 
             />
@@ -470,7 +482,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:background="@color/violet"
+            android:background="@drawable/button_states"
             android:textColor="@color/white"
 
             />
@@ -485,12 +497,117 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:background="@color/violet"
+            android:background="@drawable/button_states"
             android:textColor="@color/white"
 
             />
 
     </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstColXs"
+        android:orientation="vertical"
+        android:layout_below="@+id/budgetAgeRangeLocations"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="30dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="30dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="30dp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/secondColXs"
+        android:layout_below="@+id/budgetAgeRangeLocations"
+        android:layout_toEndOf="@+id/firstColXs"
+        android:orientation="vertical"
+        android:layout_marginLeft="13dp"
+        android:layout_toRightOf="@+id/firstColXs">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="30dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="30dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+
 
 
 </RelativeLayout>
