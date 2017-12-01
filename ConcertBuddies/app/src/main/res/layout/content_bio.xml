@@ -6,7 +6,6 @@
         tools:context="com.example.arkh_tyi.concertbuddies.layoutJavaPages.Bio"
         android:id="@+id/firstPost"
         android:paddingTop="10dp"
-        android:background="@color/teal"
         >
 
 <!-- Back Arrow Button -->
