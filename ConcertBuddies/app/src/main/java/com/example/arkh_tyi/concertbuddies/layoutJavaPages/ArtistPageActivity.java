@@ -1,4 +1,4 @@
-package com.example.arkh_tyi.concertbuddies;
+package com.example.arkh_tyi.concertbuddies.layoutJavaPages;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.example.arkh_tyi.concertbuddies.layoutJavaPages.EventPage;
+import com.example.arkh_tyi.concertbuddies.R;
 
 import java.util.ArrayList;
 
@@ -18,7 +18,6 @@ public class ArtistPageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_artist_page);
         Intent intent = getIntent();
-        String artist = intent.getStringExtra("artist");
         PinnedListAdapter listAdapter = new PinnedListAdapter(this, getEvents());
         ListView listView = findViewById(R.id.event_list);
         listView.setAdapter(listAdapter);

@@ -1,4 +1,4 @@
-package com.example.arkh_tyi.concertbuddies;
+package com.example.arkh_tyi.concertbuddies.layoutJavaPages;
 
 /**
  * Created by antlerros95 on 26/11/2017.

@@ -1,6 +1,5 @@
-package com.example.arkh_tyi.concertbuddies;
+package com.example.arkh_tyi.concertbuddies.layoutJavaPages;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -10,20 +9,22 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.arkh_tyi.concertbuddies.R;
+
 import java.util.ArrayList;
 
 /**
  * Created by antlerros95 on 26/11/2017.
  */
 
-public class ContentFragment extends Fragment {
+public class UserPageContentFragment extends Fragment {
 
     private static final String ARG_PAGE_NUMBER = "page_number";
 
-    public ContentFragment() {}
+    public UserPageContentFragment() {}
 
-    public static ContentFragment newInstance(int page) {
-        ContentFragment fragment = new ContentFragment();
+    public static UserPageContentFragment newInstance(int page) {
+        UserPageContentFragment fragment = new UserPageContentFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_PAGE_NUMBER, page);
         fragment.setArguments(args);
@@ -43,7 +44,7 @@ public class ContentFragment extends Fragment {
             rootView = (ViewGroup) inflater.inflate(
                     R.layout.fragment_artist_list, container, false);
 
-            final PinnedListAdapter listAdapter = new PinnedListAdapter(getContext(), getArtists());
+            PinnedListAdapter listAdapter = new PinnedListAdapter(getContext(), getArtists());
             ListView listView = rootView.findViewById(R.id.artists_list);
             listView.setAdapter(listAdapter);
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

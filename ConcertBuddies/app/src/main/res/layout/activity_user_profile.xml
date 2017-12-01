@@ -92,11 +92,12 @@
         <android.support.design.widget.TabLayout
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:id="@+id/tabs"
+            android:id="@+id/userpage_tabs"
             app:tabGravity="fill"
             app:tabMode="fixed"
-            app:tabTextColor="@android:color/black"
+            app:tabTextColor="@android:color/white"
             app:tabBackground="@drawable/tab_color_selector"
+            app:tabSelectedTextColor="@color/white"
             app:tabIndicatorColor="@color/violetAccent1"
             android:layout_marginBottom="1dp">
 
@@ -114,7 +115,7 @@
         </android.support.design.widget.TabLayout>
         <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/pager"
+            android:id="@+id/userpage_pager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </android.support.v4.view.ViewPager>

@@ -4,13 +4,11 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.arkh_tyi.concertbuddies.ContentFragment;
 import com.example.arkh_tyi.concertbuddies.R;
 
 public class UserProfileActivity extends AppCompatActivity {
@@ -24,22 +22,22 @@ public class UserProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
 
-        TabLayout tabs = (TabLayout) findViewById(R.id.tabs);
-        mPager = (ViewPager) findViewById(R.id.pager);
-        mPagerAdapter = new ContentPagerAdapter(getSupportFragmentManager());
+        TabLayout tabs = (TabLayout) findViewById(R.id.userpage_tabs);
+        mPager = (ViewPager) findViewById(R.id.userpage_pager);
+        mPagerAdapter = new ProfilePagerAdapter(getSupportFragmentManager());
 
         mPager.setAdapter(mPagerAdapter);
         tabs.setupWithViewPager(mPager);
     }
 
-    private class ContentPagerAdapter extends FragmentStatePagerAdapter {
-        public ContentPagerAdapter(FragmentManager fm) {
+    private class ProfilePagerAdapter extends FragmentStatePagerAdapter {
+        public ProfilePagerAdapter(FragmentManager fm) {
             super(fm);
         }
 
         @Override
         public Fragment getItem(int position) {
-            return ContentFragment.newInstance(position);
+            return UserPageContentFragment.newInstance(position);
         }
 
         @Override

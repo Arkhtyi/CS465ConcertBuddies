@@ -1,4 +1,4 @@
-package com.example.arkh_tyi.concertbuddies;
+package com.example.arkh_tyi.concertbuddies.layoutJavaPages;
 
 import java.util.ArrayList;
 

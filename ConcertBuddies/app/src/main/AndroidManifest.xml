@@ -32,7 +32,7 @@
         <activity android:name=".layoutJavaPages.EventPage" />
         <activity android:name=".layoutJavaPages.MakePlan"/>
         <activity android:name=".layoutJavaPages.UserProfileActivity" />
-        <activity android:name=".ArtistPageActivity" />
+        <activity android:name=".layoutJavaPages.ArtistPageActivity" />
         <activity android:name=".layoutJavaPages.SearchPage"/>
         <activity android:name=".layoutJavaPages.MyBuddiesPage"/>
 

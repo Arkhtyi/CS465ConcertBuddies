@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    tools:context="com.example.arkh_tyi.concertbuddies.ArtistPageActivity">
+    tools:context="com.example.arkh_tyi.concertbuddies.layoutJavaPages.ArtistPageActivity">
     <LinearLayout
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
@@ -47,11 +47,11 @@
             <!--android:textStyle="bold"-->
             <!--android:textColor="#6f6969"-->
             <!--android:text="UPCOMING EVENTS" />-->
-        <ListView
+        <de.halfbit.pinnedsection.PinnedSectionListView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/event_list">
 
-        </ListView>
+        </de.halfbit.pinnedsection.PinnedSectionListView>
     </LinearLayout>
 </LinearLayout>
