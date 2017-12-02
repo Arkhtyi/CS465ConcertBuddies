@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.example.arkh_tyi.concertbuddies.R;
@@ -16,6 +18,7 @@ import com.example.arkh_tyi.concertbuddies.R;
 public class EventPage extends AppCompatActivity {
 
     private Button makePlan;
+    private boolean saved = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,5 +34,18 @@ public class EventPage extends AppCompatActivity {
             }
         });
 
+        ImageButton saveButton = (ImageButton) findViewById(R.id.save);
+        saveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!saved) {
+                    ((ImageButton) view).setImageResource(R.drawable.check_white);
+                    saved = true;
+                } else {
+                    ((ImageButton) view).setImageResource(R.drawable.plus_white);
+                    saved = false;
+                }
+            }
+        });
     }
 }

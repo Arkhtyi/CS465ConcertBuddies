@@ -11,24 +11,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
+        android:background="@color/violet"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
         >
-        <ImageButton
-            android:id="@+id/backarrow1"
-            android:src="@drawable/arro"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
 
-            android:background="#00ffffff"
-
-            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Invite"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:layout_marginLeft="10dp"
             android:textSize="24dp"
             android:layout_gravity="center"
@@ -79,7 +73,7 @@
 
         <ImageButton
             android:layout_marginRight="10dp"
-            android:src="@drawable/favstar"
+            android:src="@drawable/plus_empty"
             android:scaleType="fitCenter"
             android:layout_width="30dp"
             android:layout_height="30dp"
