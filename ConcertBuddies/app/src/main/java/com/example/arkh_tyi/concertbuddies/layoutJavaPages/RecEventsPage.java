@@ -20,7 +20,7 @@ public class RecEventsPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.my_events);
+        setContentView(R.layout.rec_events);
 
 
         layout1 = (RelativeLayout) findViewById(R.id.rel);
