@@ -12,18 +12,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/location"
+        android:textSize="20sp"
         android:text="Chicago"/>
     <TextView
         android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/date"
+        android:textSize="20sp"
         android:text="Nov. 5, 2017"/>
-    <TextView
+    <ImageView
         android:layout_weight="0"
         android:paddingRight="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=">"/>
+        android:scaleType="fitCenter"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/rightarrow"/>
 
 </LinearLayout>
