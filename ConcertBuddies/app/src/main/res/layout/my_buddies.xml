@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!--
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -12,6 +13,30 @@
         android:gravity="center"
         android:padding="10dp"
         android:textSize="30sp"/>
+        -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/violet"
+        android:id="@+id/topBorder"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Buddies"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white" />
+
+    </LinearLayout>
     <!--Separator lines-->
     <de.halfbit.pinnedsection.PinnedSectionListView
         android:layout_width="match_parent"
