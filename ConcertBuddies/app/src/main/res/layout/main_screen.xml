@@ -2,47 +2,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:orientation="vertical"
         android:layout_weight="2"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
             <Button
                 android:id="@+id/settingsButton"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:background="@drawable/settings"
-                android:layout_marginTop="4dp"
-                android:layout_marginRight="290dp"
                 android:textColor="@color/white"
+                android:layout_marginRight="50dp"
                 android:textSize="16dp">
 
             </Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ConcertBuddy"
+                android:textColor="@color/violetAccent2"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
             <Button
                 android:id="@+id/searchButton"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:background="@drawable/search1"
-                android:layout_marginTop="4dp"
                 android:textColor="@color/white"
-                android:textSize="16dp">
+                android:textSize="16dp"
+                android:layout_marginLeft="50dp"
+                >
 
             </Button>
         </LinearLayout>
 
         <ImageView
+            android:id="@+id/imageView1"
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:id="@+id/imageView1"
-            android:src="@drawable/hipster3"
             android:paddingTop="20dp"
-            />
+            android:src="@drawable/hipster3" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -65,7 +78,7 @@
         </TextView>
         <Button
             android:id="@+id/MyBuddiesButton"
-            android:layout_width="wrap_content"
+            android:layout_width="205dp"
             android:layout_height="wrap_content"
             android:text="@string/myBuddies"
             android:background="@drawable/button_states"
@@ -75,7 +88,7 @@
             />
         <Button
             android:id="@+id/RecommendedBuddiesButton"
-            android:layout_width="wrap_content"
+            android:layout_width="205dp"
             android:layout_height="wrap_content"
             android:text="@string/recBuddies"
             android:background="@drawable/button_states"
@@ -88,13 +101,14 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/events"
             android:layout_marginBottom="3dp"
+            android:layout_marginTop="10dp"
             android:textColor="@color/violetAccent2"
             android:textSize="17dp">
 
         </TextView>
         <Button
             android:id="@+id/MyEventsButton"
-            android:layout_width="wrap_content"
+            android:layout_width="205dp"
             android:layout_height="wrap_content"
             android:text="@string/myEvents"
             android:background="@drawable/button_states"
@@ -103,7 +117,7 @@
             android:textSize="16dp"/>
         <Button
             android:id="@+id/RecommendedEventsButton"
-            android:layout_width="wrap_content"
+            android:layout_width="205dp"
             android:layout_height="wrap_content"
             android:text="@string/recEvents"
             android:background="@drawable/button_states"
