@@ -2,8 +2,332 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/violet"
+            android:id="@+id/topBorder"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:id="@+id/settingsText"
+                android:textSize="24sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.75"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Name:"
+                    android:id="@+id/nameText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:textColor="@color/violetAccent2"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Location:"
+                    android:id="@+id/locationText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:textColor="@color/violetAccent2"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Age:"
+                    android:id="@+id/ageText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:textColor="@color/violetAccent2"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Bio:"
+                    android:id="@+id/editBioText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:textColor="@color/violetAccent2"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nameEdit"
+                    android:textSize="20dp"
+                    android:padding="2dp"
+                    android:maxLength="20"
+
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/locationEdit"
+                    android:textSize="20dp"
+                    android:padding="2dp"
+                    android:maxLength="20"
+
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ageEdit"
+                    android:textSize="20dp"
+                    android:padding="2dp"
+                    android:maxLength="20"
+                    android:numeric="integer"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editBioButton"
+                    android:background="@color/violetAccent1"
+                    android:textColor="@color/white"
+                    android:scaleType="fitXY"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="31dp"
+                    android:paddingRight="31dp"
+                    android:text="Edit Bio"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v7.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="12dp"
+                    android:id="@+id/view2"
+                    app:cardCornerRadius="40dp"
+                    android:innerRadius="0dp"
+                    android:shape="ring"
+                    android:thicknessRatio="1.9"
+                    android:layout_gravity="center_horizontal"
+                    >
+                    <ImageView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:id="@+id/profilePic"
+                        android:src="@drawable/hipster3"
+
+                        android:layout_gravity="center_horizontal"
+                        >
+                    </ImageView>
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Photo"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/changePhotoText"
+                    android:textColor="@color/violetAccent2"
+                    android:textSize="15sp"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- spotify button -->
+            <ImageView
+                android:id="@+id/spotifyButton"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/spotify" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/violetAccent2"
+            android:layout_marginTop="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="3dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buddy Matching"
+                android:textSize="24sp"
+                android:id="@+id/buddyMatchingText"
+                android:textColor="@color/violetAccent2"
+                android:layout_gravity="center_horizontal"
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Budget:"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/budgetText"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/violetAccent2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age Range:"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/ageRangeText"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/violetAccent2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Locations:"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/locationsText"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/violetAccent2"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:maxLength="5"
+                        android:hint="Min"
+                        android:textSize="20sp"
+                        android:padding="5dp"
+                        android:inputType="number"
+                        android:gravity="center"
+
+                        />
+                    <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:maxLength="5"
+                        android:hint="Max"
+                        android:padding="5dp"
+                        android:inputType="number"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:maxLength="5"
+                        android:hint="Min"
+                        android:padding="5dp"
+                        android:inputType="number"
+                        android:gravity="center"
+
+                        />
+                    <EditText
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:maxLength="5"
+                        android:hint="Max"
+                        android:padding="5dp"
+                        android:inputType="number"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- user preferences -->
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- buttons -->
+        </RelativeLayout>
+    </LinearLayout>
+    <!--
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -16,279 +340,6 @@
 
 
 
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/violet"
-            android:id="@+id/topBorder"
-            />
-
-        <!-- Edit Bio Text -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Settings"
-            android:textSize="24sp"
-            android:gravity="center"
-            android:id="@+id/settingsText"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:textColor="@color/white"
-
-            />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/nameLocationAge"
-            android:orientation="vertical"
-            android:layout_below="@+id/topBorder"
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="Name:"
-                android:id="@+id/nameText"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
-                android:padding="2dp"
-                android:textColor="@color/violetAccent2"
-
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="Location:"
-                android:id="@+id/locationText"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
-                android:padding="2dp"
-                android:textColor="@color/violetAccent2"
-
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="Age:"
-                android:id="@+id/ageText"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
-                android:padding="2dp"
-                android:textColor="@color/violetAccent2"
-
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="Edit Bio:"
-                android:id="@+id/editBioText"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
-                android:padding="2dp"
-                android:textColor="@color/violetAccent2"
-
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/editTexts"
-            android:layout_toEndOf="@+id/nameLocationAge"
-            android:layout_toRightOf="@+id/nameLocationAge"
-            android:layout_below="@+id/topBorder"
-            >
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:background="@android:color/transparent"
-                android:focusable="true"
-                android:focusableInTouchMode="true">
-            </LinearLayout>
-
-            <EditText
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/nameEdit"
-                android:textSize="20dp"
-                android:padding="2dp"
-                android:maxLength="20"
-
-                />
-
-            <EditText
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/locationEdit"
-                android:textSize="20dp"
-                android:padding="2dp"
-                android:maxLength="20"
-
-                />
-            <EditText
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/ageEdit"
-                android:textSize="20dp"
-                android:padding="2dp"
-                android:maxLength="20"
-                android:numeric="integer"
-
-                />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/editBioButton"
-                android:scaleType="fitXY"
-                android:paddingTop="7dp"
-                android:paddingBottom="7dp"
-                android:paddingLeft="31dp"
-                android:paddingRight="31dp"
-                android:text="Edit Bio"
-                android:minHeight="0dp"
-                android:minWidth="0dp"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/linearAvi"
-            android:orientation="vertical"
-            android:layout_toEndOf="@+id/editTexts"
-            android:layout_toRightOf="@+id/editTexts"
-            android:layout_below="@+id/topBorder"
-            >
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="80dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="10dp"
-                android:layout_height="80dp"
-                android:elevation="12dp"
-                android:id="@+id/view2"
-                app:cardCornerRadius="40dp"
-                android:innerRadius="0dp"
-                android:shape="ring"
-                android:thicknessRatio="1.9"
-
-                >
-                <ImageView
-                    android:layout_height="80dp"
-                    android:layout_width="match_parent"
-                    android:id="@+id/profilePic"
-                    android:src="@drawable/hipster3"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-
-                    >
-                </ImageView>
-            </android.support.v7.widget.CardView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Change Photo"
-                android:layout_marginLeft="40dp"
-                android:id="@+id/changePhotoText"
-                android:textColor="@color/violetAccent2"
-                android:textSize="15sp"
-
-                />
-
-        </LinearLayout>
-
-        <ImageView
-            android:id="@+id/spotifyButton"
-            android:layout_width="250dp"
-            android:layout_height="40dp"
-            android:layout_below="@+id/linearAvi"
-            android:layout_toEndOf="@+id/nameLocationAge"
-            android:layout_toRightOf="@+id/nameLocationAge"
-            android:layout_marginTop="25dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/spotify" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Buddy Matching"
-            android:layout_below="@+id/spotifyButton"
-            android:textSize="30sp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
-            android:id="@+id/buddyMatchingText"
-            android:textColor="@color/violetAccent2"
-            android:layout_centerHorizontal="true"
-
-            />
-
-        <View
-            android:layout_width="220dp"
-            android:layout_height="1dp"
-            android:background="@color/colorPrimary"
-            android:layout_below="@+id/buddyMatchingText"
-            android:layout_marginLeft="10dp"
-            android:backgroundTint="@color/violetAccent2"
-            android:layout_centerHorizontal="true"
-            />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/budgetAgeRangeLocations"
-            android:orientation="vertical"
-            android:layout_below="@+id/buddyMatchingText"
-            android:layout_marginLeft="60dp"
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Budget"
-                android:textSize="25sp"
-                android:layout_marginLeft="10dp"
-                android:id="@+id/budgetText"
-                android:layout_marginStart="10dp"
-                android:textColor="@color/violetAccent2"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Age Range"
-                android:textSize="25sp"
-                android:layout_marginLeft="10dp"
-                android:id="@+id/ageRangeText"
-                android:layout_marginStart="10dp"
-                android:textColor="@color/violetAccent2"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Locations"
-                android:textSize="25sp"
-                android:layout_marginLeft="10dp"
-                android:id="@+id/locationsText"
-                android:layout_marginStart="10dp"
-                android:textColor="@color/violetAccent2"
-                />
-
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -617,4 +668,5 @@
 
 
     </RelativeLayout>
+-->
 </ScrollView>
