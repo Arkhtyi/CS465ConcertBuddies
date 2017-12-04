@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.example.arkh_tyi.concertbuddies.R;
 
@@ -41,6 +42,7 @@ public class EventPage extends AppCompatActivity {
                 if (!saved) {
                     ((ImageButton) view).setImageResource(R.drawable.check_white);
                     saved = true;
+                    Toast.makeText(EventPage.this, "Event saved!", Toast.LENGTH_SHORT).show();
                 } else {
                     ((ImageButton) view).setImageResource(R.drawable.plus_white);
                     saved = false;

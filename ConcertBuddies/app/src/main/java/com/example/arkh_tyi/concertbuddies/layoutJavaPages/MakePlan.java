@@ -54,7 +54,7 @@ public class MakePlan extends AppCompatActivity {
                 }
                 ((BaseAdapter) listView.getAdapter()).notifyDataSetChanged();
 
-                Toast.makeText(getBaseContext(), R.string.send_invitation, 1).show();
+                Toast.makeText(getBaseContext(), R.string.send_invitation, Toast.LENGTH_SHORT).show();
             }
         });
     }
