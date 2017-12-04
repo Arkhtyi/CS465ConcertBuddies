@@ -230,6 +230,7 @@
         >
 
         <TextView
+            android:fontFamily="@android:"
             android:background="@color/violetAccent2"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
@@ -383,9 +384,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Drate"
-            android:textSize="20dp"
+            android:textSize="18sp"
             android:layout_gravity="center"
-            android:layout_marginLeft="15dp"
+            android:layout_margin="5dp"
             />
 
     </LinearLayout>
