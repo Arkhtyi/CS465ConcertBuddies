@@ -92,6 +92,11 @@ public class PinnedListAdapter extends ArrayAdapter<Item> implements PinnedSecti
             location.setText(((Buddy) item).getLocation());
             name.setText(item.getTitle());
             image.setImageResource(((Buddy) item).getImgSrc());
+            if (item.getChecked()) {
+                view.setBackgroundColor(view.getResources().getColor(R.color.violetAccent1));
+            } else {
+                view.setBackgroundColor(view.getResources().getColor(R.color.white));
+            }
         } else {
             view = LayoutInflater.from(getContext()).inflate(R.layout.item_header, viewGroup, false);
             TextView textView = (TextView) view.findViewById(R.id.section_header);

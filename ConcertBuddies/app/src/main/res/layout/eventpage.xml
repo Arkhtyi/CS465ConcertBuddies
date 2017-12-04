@@ -229,7 +229,6 @@
         >
 
         <TextView
-            android:fontFamily="@android:"
             android:background="@color/violetAccent2"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
