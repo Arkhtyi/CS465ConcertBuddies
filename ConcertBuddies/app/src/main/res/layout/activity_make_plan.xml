@@ -39,9 +39,10 @@
             android:layout_marginRight="10dp"
             android:layout_width="60dp"
             android:layout_height="30dp"
+            android:textSize="15sp"
             android:background="@drawable/button_states"
             android:textColor="@color/white"
-            android:scaleType="fitCenter"
+            android:gravity="bottom"
             android:text="Send" />
 
 
