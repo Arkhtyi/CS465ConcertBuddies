@@ -22,7 +22,6 @@
             android:paddingTop="15dp"
             android:paddingBottom="10dp"
             android:gravity="center"
-            android:layout_centerHorizontal="true"
             android:text="Adele in Chicago"
             android:textColor="@color/white"
             android:textSize="24sp"
