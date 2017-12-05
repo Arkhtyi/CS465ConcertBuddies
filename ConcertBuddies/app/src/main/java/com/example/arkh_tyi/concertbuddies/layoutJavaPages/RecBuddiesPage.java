@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import com.example.arkh_tyi.concertbuddies.R;
 
@@ -30,6 +31,15 @@ public class RecBuddiesPage extends AppCompatActivity {
         person4 = (ImageButton) findViewById(R.id.image4);
         person5 = (ImageButton) findViewById(R.id.image5);
         person6 = (ImageButton) findViewById(R.id.image6);
+
+        ImageView plus1 = (ImageView) findViewById(R.id.plus1);
+        ImageView plus2 = (ImageView) findViewById(R.id.plus2);
+        ImageView plus3 = (ImageView) findViewById(R.id.plus3);
+        ImageView plus4 = (ImageView) findViewById(R.id.plus4);
+        ImageView plus5 = (ImageView) findViewById(R.id.plus5);
+        ImageView plus6 = (ImageView) findViewById(R.id.plus6);
+        ImageView plus7 = (ImageView) findViewById(R.id.plus7);
+        ImageView plus8 = (ImageView) findViewById(R.id.plus8);
 
 
         person1.setOnClickListener(new View.OnClickListener() {
@@ -69,6 +79,53 @@ public class RecBuddiesPage extends AppCompatActivity {
             }
         });
 
-
+        plus1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((ImageView) view).setImageResource(R.drawable.check_purple);
+            }
+        });
+        plus2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((ImageView) view).setImageResource(R.drawable.check_purple);
+            }
+        });
+        plus3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((ImageView) view).setImageResource(R.drawable.check_purple);
+            }
+        });
+        plus4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((ImageView) view).setImageResource(R.drawable.check_purple);
+            }
+        });
+        plus5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((ImageView) view).setImageResource(R.drawable.check_purple);
+            }
+        });
+        plus6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((ImageView) view).setImageResource(R.drawable.check_purple);
+            }
+        });
+        plus7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((ImageView) view).setImageResource(R.drawable.check_purple);
+            }
+        });
+        plus8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((ImageView) view).setImageResource(R.drawable.check_purple);
+            }
+        });
     }
 }
