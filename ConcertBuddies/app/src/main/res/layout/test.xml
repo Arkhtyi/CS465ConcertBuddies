@@ -128,7 +128,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/editBioButton"
-                    android:background="@color/violetAccent1"
+                    android:background="@drawable/cities"
                     android:textColor="@color/white"
                     android:scaleType="fitXY"
                     android:paddingTop="6dp"
@@ -207,7 +207,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Buddy Matching"
+                android:text="@string/buddyMatching"
                 android:textSize="24sp"
                 android:id="@+id/buddyMatchingText"
                 android:textColor="@color/violetAccent2"
@@ -220,7 +220,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -234,6 +235,7 @@
                     android:id="@+id/budgetText"
                     android:layout_marginStart="10dp"
                     android:textColor="@color/violetAccent2"
+                    android:padding="5dp"
                     />
 
                 <TextView
@@ -245,6 +247,7 @@
                     android:id="@+id/ageRangeText"
                     android:layout_marginStart="10dp"
                     android:textColor="@color/violetAccent2"
+                    android:padding="5dp"
                     />
 
                 <TextView
@@ -256,6 +259,7 @@
                     android:id="@+id/locationsText"
                     android:layout_marginStart="10dp"
                     android:textColor="@color/violetAccent2"
+                    android:padding="5dp"
                     />
             </LinearLayout>
             <LinearLayout
@@ -269,24 +273,27 @@
                     android:orientation="horizontal"
                     >
                     <EditText
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:maxLength="5"
-                        android:hint="Min"
-                        android:textSize="20sp"
-                        android:padding="5dp"
-                        android:inputType="number"
-                        android:gravity="center"
 
+                        android:hint="Min"
+
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:padding="5dp"
+                        android:maxLength="20"
+                        android:textColorHint="@color/violetAccent2"
                         />
                     <EditText
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:maxLength="5"
                         android:hint="Max"
-                        android:padding="5dp"
+                        android:layout_marginLeft="5dp"
                         android:inputType="number"
-                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:padding="5dp"
+                        android:maxLength="20"
+                        android:textColorHint="@color/violetAccent2"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -294,379 +301,240 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <EditText
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:maxLength="5"
-                        android:hint="Min"
-                        android:padding="5dp"
-                        android:inputType="number"
-                        android:gravity="center"
 
+                        android:hint="Min"
+
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:padding="5dp"
+                        android:maxLength="20"
+                        android:textColorHint="@color/violetAccent2"
                         />
                     <EditText
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:maxLength="5"
                         android:hint="Max"
-                        android:padding="5dp"
+                        android:layout_marginLeft="5dp"
                         android:inputType="number"
-                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:padding="5dp"
+                        android:maxLength="20"
+                        android:textColorHint="@color/violetAccent2"
                         />
                 </LinearLayout>
+                <Spinner
+                    android:id="@+id/dropDown"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/locations"
+                    android:entries="@array/cities_list"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+
+                    />
 
             </LinearLayout>
+
         </LinearLayout>
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <!-- user preferences -->
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <!-- buttons -->
-        </RelativeLayout>
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                >
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/cities"
+                    android:textColor="@color/white"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:text="CHICAGO"
+                        android:textSize="18dp"/>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/xicon"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/cities"
+                    android:textColor="@color/white"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:text="ATLANTA"
+                        android:textSize="18dp"/>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/xicon"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/cities"
+                    android:textColor="@color/white"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:text="LA"
+                        android:textSize="18dp"/>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/xicon"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/cities"
+                    android:textColor="@color/white"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:text="SEATTLE"
+                        android:textSize="18dp"/>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/xicon"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                >
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/cities"
+                    android:textColor="@color/white"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:text="DETROIT"
+                        android:textSize="18dp"/>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/xicon"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/cities"
+                    android:textColor="@color/white"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:text="BOSTON"
+                        android:textSize="18dp"/>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/xicon"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/cities"
+                    android:textColor="@color/white"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:text="NEW YORK"
+                        android:textSize="18dp"/>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/xicon"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
-    <!--
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="com.example.arkh_tyi.concertbuddies.layoutJavaPages.Settings"
-        tools:showIn="@layout/activity_settings">
 
-
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/minEditTexts"
-            android:layout_toEndOf="@+id/budgetAgeRangeLocations"
-            android:layout_below="@+id/buddyMatchingText"
-            android:layout_toRightOf="@+id/budgetAgeRangeLocations"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            >
-
-            <EditText
-                android:layout_width="35dp"
-                android:layout_height="wrap_content"
-                android:maxLength="3"
-                android:hint="Min"
-                android:padding="2dp"
-                android:inputType="number"
-                android:gravity="center"
-
-                />
-
-            <EditText
-                android:layout_width="35dp"
-                android:layout_height="wrap_content"
-                android:maxLength="3"
-                android:hint="Min"
-                android:padding="2dp"
-                android:inputType="number"
-                android:gravity="center"
-
-                />
-
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/maxEditTexts"
-            android:layout_toEndOf="@+id/minEditTexts"
-            android:layout_below="@+id/buddyMatchingText"
-            android:layout_toRightOf="@+id/minEditTexts"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            >
-
-            <EditText
-                android:layout_width="38dp"
-                android:layout_height="wrap_content"
-                android:maxLength="3"
-                android:hint="Max"
-                android:padding="2dp"
-                android:inputType="number"
-                android:gravity="center"
-                />
-
-            <EditText
-                android:layout_width="38dp"
-                android:layout_height="wrap_content"
-                android:maxLength="3"
-                android:hint="Max"
-                android:padding="2dp"
-                android:inputType="number"
-                android:gravity="center"
-
-                />
-
-
-
-        </LinearLayout>
-
-        <Spinner
-            android:id="@+id/dropDown"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:prompt="@string/locations"
-            android:layout_below="@+id/minEditTexts"
-            android:layout_toEndOf="@+id/budgetAgeRangeLocations"
-            android:layout_toRightOf="@+id/budgetAgeRangeLocations"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
-            android:entries="@array/cities_list"
-
-            />
-
-
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/firstColLocations"
-            android:orientation="vertical"
-            android:layout_below="@id/budgetAgeRangeLocations"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            >
-
-            <Button
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/chicago"
-                android:text="Chicago"
-                android:textSize="16sp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginStart="20dp"
-                android:gravity="center"
-                android:background="@drawable/button_states"
-                android:textColor="@color/white"
-                />
-
-            <Button
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/boston"
-                android:text="Boston"
-                android:textSize="16sp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:background="@drawable/button_states"
-                android:textColor="@color/white"
-
-                />
-
-            <Button
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/atlanta"
-                android:text="Atlanta"
-                android:textSize="16sp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:background="@drawable/button_states"
-                android:textColor="@color/white"
-
-                />
-
-            <Button
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/detroit"
-                android:text="Detroit"
-                android:textSize="16sp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:background="@drawable/button_states"
-                android:textColor="@color/white"
-
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/secondColLocations"
-            android:orientation="vertical"
-            android:layout_below="@id/budgetAgeRangeLocations"
-            android:layout_toEndOf="@+id/firstColLocations"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_toRightOf="@+id/firstColLocations">
-
-            <Button
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/losAngeles"
-                android:text="Los Angeles"
-                android:textSize="16sp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginStart="20dp"
-                android:gravity="center"
-                android:background="@drawable/button_states"
-                android:textColor="@color/white"
-
-                />
-
-            <Button
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/newYorkCity"
-                android:text="New York City"
-                android:textSize="16sp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:background="@drawable/button_states"
-                android:textColor="@color/white"
-
-                />
-
-            <Button
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/seattle"
-                android:text="Seattle"
-                android:textSize="16sp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:background="@drawable/button_states"
-                android:textColor="@color/white"
-
-                />
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/firstColXs"
-            android:orientation="vertical"
-            android:layout_below="@+id/budgetAgeRangeLocations"
-            >
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="x"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:layout_marginLeft="160dp"
-                android:layout_marginTop="20dp"
-
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="x"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:layout_marginLeft="160dp"
-                android:layout_marginTop="30dp"
-
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="x"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:layout_marginLeft="160dp"
-                android:layout_marginTop="30dp"
-
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="x"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:layout_marginLeft="160dp"
-                android:layout_marginTop="30dp"
-
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/secondColXs"
-            android:layout_below="@+id/budgetAgeRangeLocations"
-            android:layout_toEndOf="@+id/firstColXs"
-            android:orientation="vertical"
-            android:layout_marginLeft="13dp"
-            android:layout_toRightOf="@+id/firstColXs">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="x"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:layout_marginLeft="160dp"
-                android:layout_marginTop="20dp"
-
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="x"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:layout_marginLeft="160dp"
-                android:layout_marginTop="30dp"
-
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="x"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:layout_marginLeft="160dp"
-                android:layout_marginTop="30dp"
-
-                />
-
-
-        </LinearLayout>
-
-
-
-
-
-    </RelativeLayout>
--->
 </ScrollView>
