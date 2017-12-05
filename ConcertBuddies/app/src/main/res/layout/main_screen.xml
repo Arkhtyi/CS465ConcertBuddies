@@ -66,58 +66,40 @@
         android:orientation="vertical"
         android:paddingTop="20dp"
         >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/buddiesu"
-            android:layout_marginBottom="3dp"
-            android:textColor="@color/violetAccent2"
-            android:textSize="17dp"
-            >
-        </TextView>
         <Button
             android:id="@+id/MyBuddiesButton"
-            android:layout_width="205dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:text="@string/myBuddies"
             android:background="@drawable/button_states"
             android:layout_marginBottom="5dp"
+            android:layout_marginTop="25dp"
             android:textColor="@color/white"
             android:textSize="16dp"
             />
         <Button
             android:id="@+id/RecommendedBuddiesButton"
-            android:layout_width="205dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:text="@string/recBuddies"
             android:background="@drawable/button_states"
             android:layout_marginBottom="10dp"
             android:textColor="@color/white"
             android:textSize="16dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/events"
-            android:layout_marginBottom="3dp"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/violetAccent2"
-            android:textSize="17dp">
 
-        </TextView>
         <Button
             android:id="@+id/MyEventsButton"
-            android:layout_width="205dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:text="@string/myEvents"
             android:background="@drawable/button_states"
             android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
             android:textColor="@color/white"
             android:textSize="16dp"/>
         <Button
             android:id="@+id/RecommendedEventsButton"
-            android:layout_width="205dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:text="@string/recEvents"
             android:background="@drawable/button_states"
