@@ -138,7 +138,7 @@
                     android:text="Edit Bio"
                     android:minHeight="0dp"
                     android:minWidth="0dp"
-                    android:src="@drawable/whiteArrow"
+                    android:src="@drawable/whitearrow"
                     />
             </LinearLayout>
             <LinearLayout

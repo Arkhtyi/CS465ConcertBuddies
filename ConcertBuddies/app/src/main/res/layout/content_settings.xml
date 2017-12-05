@@ -42,7 +42,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
-                    android:text="Name:"
+                    android:text="Name"
                     android:id="@+id/nameText"
                     android:layout_marginLeft="10dp"
                     android:layout_marginStart="10dp"
@@ -55,7 +55,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
-                    android:text="Location:"
+                    android:text="Location"
                     android:id="@+id/locationText"
                     android:layout_marginLeft="10dp"
                     android:layout_marginStart="10dp"
@@ -68,7 +68,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
-                    android:text="Age:"
+                    android:text="Age"
                     android:id="@+id/ageText"
                     android:layout_marginLeft="10dp"
                     android:layout_marginStart="10dp"
@@ -81,7 +81,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
-                    android:text="Edit Bio:"
+                    android:text="Edit Bio"
                     android:id="@+id/editBioText"
                     android:layout_marginLeft="10dp"
                     android:layout_marginStart="10dp"
@@ -124,22 +124,21 @@
                     android:numeric="integer"
 
                     />
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
                     android:id="@+id/editBioButton"
                     android:background="@drawable/cities"
-                    android:textColor="@color/white"
-                    android:scaleType="fitXY"
-                    android:paddingTop="6dp"
-                    android:paddingBottom="6dp"
-                    android:paddingLeft="31dp"
-                    android:paddingRight="31dp"
-                    android:text="Edit Bio"
-                    android:minHeight="0dp"
-                    android:minWidth="0dp"
-                    android:src="@drawable/whiteArrow"
-                    />
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/whitearrow" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
