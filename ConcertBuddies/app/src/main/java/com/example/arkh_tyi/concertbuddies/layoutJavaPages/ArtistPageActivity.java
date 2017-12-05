@@ -41,6 +41,9 @@ public class ArtistPageActivity extends AppCompatActivity {
         list.add(new SectionHeader("UPCOMING EVENTS"));
         list.add(new Event("Adele in Chicago", "Chicago", "Nov. 5, 2017"));
         list.add(new Event("Adele in Milwaukee", "Milwaukee", "Dec. 17, 2017"));
+        list.add(new Event("Adele in Austin", "Austin", "Jan. 8, 2018"));
+        list.add(new Event("Adele in Houston", "Houston", "Jan. 19, 2018"));
+        list.add(new Event("Adele in LA", "Los Angeles", "Feb. 1, 2018"));
         return list;
     }
 }

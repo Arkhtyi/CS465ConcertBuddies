@@ -1,14 +1,12 @@
 package com.example.arkh_tyi.concertbuddies.layoutJavaPages;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -28,7 +26,7 @@ public class MakePlan extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_make_plan);
 
-        Button sendButton = (Button) findViewById(R.id.send);
+        ImageButton sendButton = (ImageButton) findViewById(R.id.send);
         PinnedListAdapter listAdapter = new PinnedListAdapter(this, getBuddies());
         ListView listView = findViewById(R.id.invite_list);
         listView.setAdapter(listAdapter);
