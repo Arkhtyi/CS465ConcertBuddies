@@ -81,7 +81,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
-                    android:text="Bio:"
+                    android:text="Edit Bio:"
                     android:id="@+id/editBioText"
                     android:layout_marginLeft="10dp"
                     android:layout_marginStart="10dp"
@@ -138,6 +138,7 @@
                     android:text="Edit Bio"
                     android:minHeight="0dp"
                     android:minWidth="0dp"
+                    android:src="@drawable/whiteArrow"
                     />
             </LinearLayout>
             <LinearLayout
@@ -202,7 +203,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="3dp"
+            android:layout_marginTop="5dp"
             >
             <TextView
                 android:layout_width="wrap_content"
