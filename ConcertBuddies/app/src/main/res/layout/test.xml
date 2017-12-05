@@ -69,38 +69,74 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="145dp"
+                            android:layout_height="145dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="10dp">
+                            <ImageView
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:id="@+id/view2"
+                                android:src="@drawable/hipster3"
+                                android:layout_gravity="center_horizontal"
+                                >
+                            </ImageView>
+                            <ImageView
+                                android:id="@+id/imageView38"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                app:srcCompat="@drawable/camera"
+                                android:layout_alignRight="@+id/view2"
+                                android:layout_alignBottom="@+id/view2"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginRight="2dp"/>
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="2dp">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="15sp"
+                            android:textSize="10sp"
                             android:text="Name"
                             android:id="@+id/nameText"
-                            android:textColor="@color/lighter_grey"
+                            android:padding="0dp"
+                            android:textColor="@color/violetAccent2"
 
                             />
-
                         <EditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/nameEdit"
-                            android:textSize="18sp"
-                            android:paddingBottom="10dp"
+                            android:textSize="20dp"
+                            android:padding="0dp"
                             android:maxLength="20"
+
                             />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="15sp"
+                            android:textSize="10sp"
                             android:text="Location"
                             android:id="@+id/locationText"
-                            android:textColor="@color/lighter_grey"
+                            android:padding="0dp"
+                            android:textColor="@color/violetAccent2"
 
                             />
 
@@ -108,72 +144,34 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/locationEdit"
-                            android:textSize="18sp"
-                            android:paddingBottom="10dp"
+                            android:textSize="20dp"
+                            android:padding="0dp"
                             android:maxLength="20"
 
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="15sp"
+                            android:textSize="10sp"
                             android:text="Age"
                             android:id="@+id/ageText"
-                            android:textColor="@color/lighter_grey"
+                            android:padding="0dp"
+                            android:textColor="@color/violetAccent2"
 
                             />
                         <EditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/ageEdit"
-                            android:textSize="18sp"
-                            android:paddingBottom="10dp"
+                            android:textSize="20dp"
+                            android:padding="0dp"
                             android:maxLength="20"
+                            android:numeric="integer"
+
                             />
 
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:orientation="vertical">
-                        <android.support.v7.widget.CardView
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_marginTop="5dp"
-                            android:elevation="12dp"
-                            android:id="@+id/view2"
-                            app:cardCornerRadius="40dp"
-                            android:innerRadius="0dp"
-                            android:shape="ring"
-                            android:thicknessRatio="1.9"
-                            android:layout_gravity="center_horizontal"
-                            >
-                            <ImageView
-                                android:layout_height="match_parent"
-                                android:layout_width="match_parent"
-                                android:id="@+id/profilePic"
-                                android:src="@drawable/hipster3"
-
-                                android:layout_gravity="center_horizontal"
-                                >
-                            </ImageView>
-                        </android.support.v7.widget.CardView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Change Photo"
-                            android:layout_marginTop="3dp"
-                            android:layout_gravity="center_horizontal"
-                            android:id="@+id/changePhotoText"
-                            android:textColor="@color/violetAccent2"
-                            android:textSize="15sp"
-                            />
                         <Button
-                            android:layout_marginTop="28dp"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/editBioButton"
                             android:background="@drawable/cities"
@@ -181,13 +179,14 @@
                             android:scaleType="fitXY"
                             android:paddingTop="6dp"
                             android:paddingBottom="6dp"
-                            android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
+                            android:layout_marginTop="8dp"
                             android:text="Edit Bio"
                             android:minHeight="0dp"
                             android:minWidth="0dp"
+                            android:src="@drawable/whitearrow"
                             />
                     </LinearLayout>
+
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -218,128 +217,187 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buddyMatching"
+                    android:textSize="24sp"
+                    android:id="@+id/buddyMatchingText"
+                    android:textColor="@color/violetAccent2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:gravity="center_horizontal">
+                    android:layout_marginLeft="35dp">
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:gravity="right"
-                        android:layout_marginRight="10dp">
+
+                        >
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Budget"
-                            android:textSize="18sp"
-                            android:layout_marginLeft="10dp"
+                            android:textSize="20sp"
                             android:id="@+id/budgetText"
-                            android:layout_marginStart="10dp"
-                            android:textColor="@color/black"
-                            android:paddingTop="10dp"
+                            android:textColor="@color/violetAccent2"
+                            android:padding="5dp"
                             />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Age Range"
-                            android:textSize="18sp"
-                            android:layout_marginLeft="10dp"
+                            android:textSize="20sp"
                             android:id="@+id/ageRangeText"
-                            android:layout_marginStart="10dp"
-                            android:textColor="@color/black"
-                            android:paddingTop="20dp"
+                            android:textColor="@color/violetAccent2"
+                            android:padding="5dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$"
+                            android:textSize="15sp"
+                            android:textColor="@color/violetAccent2"
+                            android:padding="5dp"
                             />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Locations"
-                            android:textSize="18sp"
-                            android:layout_marginLeft="10dp"
-                            android:id="@+id/locationsText"
-                            android:layout_marginStart="10dp"
-                            android:textColor="@color/black"
-                            android:paddingTop="15dp"
+                            android:text=" "
+                            android:textSize="15sp"
+
+                            android:textColor="@color/violetAccent2"
+                            android:padding="5dp"
                             />
                     </LinearLayout>
-
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:layout_marginLeft="5dp">
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+
+                        >
+                        <EditText
+
+                            android:hint="Min"
+                            android:inputType="number"
+                            android:layout_width="50dp"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            >
-                            <EditText
+                            android:textSize="20dp"
+                            android:padding="5dp"
+                            android:maxLength="20"
+                            android:textColorHint="@color/violetAccent2"
+                            />
+                        <EditText
 
-                                android:hint="Min"
+                            android:hint="Min"
 
-                                android:inputType="number"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="18sp"
-                                android:padding="10dp"
-                                android:maxLength="20"
-                                android:textColorHint="@color/violetAccent2"
-                                />
-                            <EditText
-                                android:hint="Max"
-                                android:layout_marginLeft="10dp"
-                                android:inputType="number"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="18sp"
-                                android:padding="10dp"
-                                android:maxLength="20"
-                                android:textColorHint="@color/violetAccent2"
-                                />
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:inputType="number"
+                            android:layout_width="50dp"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-                            <EditText
-
-                                android:hint="Min"
-
-                                android:inputType="number"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="18sp"
-                                android:padding="10dp"
-                                android:maxLength="20"
-                                android:textColorHint="@color/violetAccent2"
-                                />
-                            <EditText
-                                android:hint="Max"
-                                android:layout_marginLeft="10dp"
-                                android:inputType="number"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="18sp"
-                                android:padding="10dp"
-                                android:maxLength="20"
-                                android:textColorHint="@color/violetAccent2"
-                                />
-                        </LinearLayout>
-                        <Spinner
-                            android:id="@+id/dropDown"
-                            android:layout_width="150dp"
-                            android:layout_height="wrap_content"
-                            android:prompt="@string/locations"
-                            android:entries="@array/cities_list"
-                            android:layout_marginTop="5dp"
-                            android:gravity="bottom|left"
-                            android:textSize="18sp"
-
+                            android:textSize="20dp"
+                            android:padding="5dp"
+                            android:maxLength="20"
+                            android:textColorHint="@color/violetAccent2"
                             />
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$"
+                            android:textSize="15sp"
+                            android:textColor="@color/violetAccent2"
+                            android:padding="5dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textSize="15sp"
+
+                            android:textColor="@color/violetAccent2"
+                            android:padding="5dp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+                        <EditText
+
+                            android:hint="Max"
+                            android:inputType="number"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:padding="5dp"
+                            android:maxLength="20"
+                            android:textColorHint="@color/violetAccent2"
+                            />
+                        <EditText
+
+                            android:hint="Max"
+
+                            android:inputType="number"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:padding="5dp"
+                            android:maxLength="20"
+                            android:textColorHint="@color/violetAccent2"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="35dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Locations"
+                        android:textSize="20sp"
+                        android:id="@+id/locationsText"
+                        android:textColor="@color/violetAccent2"
+                        android:padding="5dp"
+                        />
+                    <Spinner
+                        android:id="@+id/dropDown"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:prompt="@string/locations"
+                        android:entries="@array/cities_list"
+                        android:padding="5dp"
+                        android:textSize="20dp"
+                        android:color="@color/violetAccent2"
+                        android:layout_marginLeft="30dp"
+                        />
                 </LinearLayout>
                 <LinearLayout
                     xmlns:android="http://schemas.android.com/apk/res/android"
