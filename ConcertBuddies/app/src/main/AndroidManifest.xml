@@ -24,7 +24,8 @@
             android:label="@string/title_activity_login"
             android:theme="@style/AppTheme.NoActionBar"
             tools:ignore="DuplicateActivity" />
-        <activity android:name=".layoutJavaPages.Settings" />
+        <activity android:name=".layoutJavaPages.Settings"
+                android:windowSoftInputMode="stateHidden"/>
         <activity android:name=".MakePlan" />
         <activity android:name=".layoutJavaPages.MyEventsPage" />
         <activity android:name=".layoutJavaPages.RecBuddiesPage" />
